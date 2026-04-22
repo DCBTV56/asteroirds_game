@@ -21,13 +21,6 @@ class Bullet {
     if (this.y > canvasHeight) this.y = 0;
   }
 
-  draw(ctx) {
-    ctx.fillStyle = 'white';
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-    ctx.fill();
-  }
-
   isDead() {
     return this.life <= 0;
   }
